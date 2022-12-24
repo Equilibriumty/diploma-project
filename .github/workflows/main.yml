@@ -17,10 +17,10 @@ jobs:
           node-version: '16'
           cache: 'npm'
 
-        name: cd to Frontend
-      - run: cd ./frontend
         name: Installing deps
-      - run: yarn install --frozen-lockfile
+      - run: |
+          cd ./frontend
+          yarn install --frozen-lockfile
         name: Running ESlint
       - run: yarn lint
         name: Running Prettier
