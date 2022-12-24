@@ -10,6 +10,9 @@ jobs:
   buildAndTest:
     name: Build & test App
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./frontend
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
