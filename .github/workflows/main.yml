@@ -17,11 +17,11 @@ jobs:
           node-version: '16'
           cache: 'npm'
       
-      name: Installing deps
-        - run: yarn install --frozen-lockfile
-      name: Running ESlint
-        - run: yarn lint
-      name: Running Prettier
-        - run: yarn prettier
-      name: Running tests
-        - run: yarn test:ci
+        name: Installing deps
+      - run: yarn install --frozen-lockfile
+        name: Running ESlint
+      - run: yarn lint
+        name: Running Prettier
+      - run: yarn prettier
+        name: Running tests
+      - run: yarn test:ci
