@@ -6,7 +6,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   const handleChange = useCallback(() => {
-    setCount((newCount) => newCount + 2);
+    setCount((newCount) => newCount + 1);
   }, []);
 
   return (
