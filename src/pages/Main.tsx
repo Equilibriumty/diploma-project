@@ -1,5 +1,4 @@
 import { useCallback, useState } from 'react';
-import { redirect } from 'react-router-dom';
 import reactLogo from '../assets/react.svg';
 
 function Main() {

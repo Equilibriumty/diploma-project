@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "test": "vitest",
     "test:ci": "vitest run",
-    "lint": "eslint \"**/*.{ts,tsx}\"",
+    "lint": "eslint \"**/*.{ts,tsx}\" --max-warnings=0",
     "format": "prettier -w ./src"
   },
   "dependencies": {
